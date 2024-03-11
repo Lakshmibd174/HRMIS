@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        
+
+        <meta charset="utf-8" />
+                <title>HRMIS</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+                <meta content="" name="author" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+                <!-- App favicon -->
+                <link rel="shortcut icon" href="/images/favicon.ico">
+
+       
+
+        <link href="/libs/@midzer/tobii/tobii.min.css" rel="stylesheet" type="text/css" />
+        <link href="/libs/simple-datatables/style.css" rel="stylesheet" type="text/css" />
+         <link href="/libs/litepicker/css/litepicker.css" rel="stylesheet" type="text/css" />
+
+         <!-- App css -->
+         <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+         <link href="/css/icons.min.css" rel="stylesheet" type="text/css" />
+         <link href="/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body id="body">
+        <!-- leftbar-tab-menu -->
+        <div class="leftbar-tab-menu">
+            <div class="main-icon-menu">
+                
+                
+                <div class="main-icon-menu-body">
+                    <div class="position-reletive h-100" data-simplebar style="overflow-x: hidden;">
+                       <ul class="nav nav-tabs" role="tablist" id="tab-menu">
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard" data-bs-trigger="hover">
+                                <a href="/employeedashboard" id="dashboard-tab" class="nav-link">
+                                    <i class="ti ti-smart-home menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Trainings" data-bs-trigger="hover">
+                                <a href="/trainings" id="uikit-tab" class="nav-link active">
+                                    <i class="ti ti-planet menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Profile" data-bs-trigger="hover">
+                                <a href="/profile" id="authentication-tab" class="nav-link">
+                                    <i class="ti ti-shield-lock menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                        </ul><!--end nav-->
+                    </div><!--end /div-->
+                </div><!--end main-icon-menu-body-->
+               
+            </div>
+            <!--end main-icon-menu-->
+
+        </div>
+        <!-- end leftbar-tab-menu-->
+
+        <!-- Top Bar Start -->
+        <!-- Top Bar Start -->
+        <div class="topbar">            
+            <!-- Navbar -->
+            <nav class="navbar-custom" id="navbar-custom">    
+                <ul class="list-unstyled topbar-nav float-end mb-0">
+                    
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                               
+                                 <div>
+                                    <small class="d-none d-md-block font-11">Employee</small>
+                                   
+                                </div>
+
+                                 <div style="margin-left: 10px">
+                                   <i class="fa fa-angle-down font-16 me-1"></i>
+                                </div>
+                                
+                            </div>
+                        </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <div class="dropdown-divider mb-0"></div>
+                            <a class="dropdown-item" href="/"><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
+                        </div>
+                    </li><!--end topbar-profile-->
+                </ul><!--end topbar-nav-->
+            </nav>
+            <!-- end navbar-->
+        </div>
+        <!-- Top Bar End -->
+        <!-- Top Bar End -->
+         <div class="modal fade bd-example-modal-large" id="leavemodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-large" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title m-0" id="myLargeModalLabel">Leave</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div><!--end modal-header-->
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col">                      
+                                    <h4 class="card-title">Request Leave</h4>                      
+                                </div><!--end col-->                                                       
+                            </div>  <!--end row-->                                  
+                        </div><!--end card-header-->
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12 col-xl-12">
+                                     <div class="form-group mb-3 row">
+                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Leave Type</label>
+                                         <div class="col-lg-9 col-xl-8">
+                                            <select class="form-select">
+                                                <option>London</option>
+                                                <option>India</option>
+                                                <option>USA</option>
+                                                <option>Canada</option>
+                                                <option>Thailand</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-3 row">
+                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Leave Date</label>
+                                        <div class="col-lg-9 col-xl-8">
+                                            <div class="input-group">
+                                                <span class="input-group-text"></i></span>
+                                                <input type="date" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="form-group mb-3 row">
+                                        <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Number of Days</label>
+                                        <div class="col-lg-9 col-xl-8">
+                                            <div class="input-group">
+                                                <span class="input-group-text"></i></span>
+                                                <input type="text" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>                                             
+                        </div>                                            
+                    </div>
+                                               
+                                                
+                </div><!--end modal-body-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-de-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div><!--end modal-footer-->
+            </div><!--end modal-content-->
+        </div><!--end modal-dialog-->
+    </div><!--end modal-->
+
+
+    <div style="margin-left: 80px;margin-top: 100px;">
+        <!-- Page Content-->
+        <div class="page-content-tab">
+
+            <div class="container-fluid">
+                <!-- Page-Title -->
+                
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                        <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row align-items-center">
+                                                            <div class="col">                      
+                                                                <h4 class="card-title">Available Training Programs</h4>                      
+                                                            </div><!--end col-->
+                                                           
+                                                        </div>  <!--end row-->                                  
+                                                    </div><!--end card-header-->
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <div class="blog-card">
+                                                                            <img src="/images/hrmis.jpeg" alt="" class="img-fluid rounded">
+                                                                            <span class="badge badge-purple px-3 py-2 bg-soft-primary fw-semibold mt-3">Photography</span>   
+                                                                            <h4 class="my-3 font-15">
+                                                                                <a href="" class="">Introduction to Photography</a>
+                                                                            </h4>
+                                                                            <p class="text-muted">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Cum sociis natoque penatibus et magnis.</p>
+                                                                            <hr class="hr-dashed">
+                                                                            <div class="d-flex justify-content-between">
+                                                                                <div class="meta-box">
+                                                                                    <div class="media">
+                                                                                                                          
+                                                                                        <div class="media-body align-self-center text-truncate">
+                                                                                            <h6 class="m-0 text-dark">Provider</h6>
+                                                                                            <ul class="p-0 list-inline mb-0">
+                                                                                                <li class="list-inline-item">Oracle</li>
+                                                                            
+                                                                                            </ul>
+                                                                                        </div><!--end media-body-->
+                                                                                    </div>                                            
+                                                                                </div><!--end meta-box-->
+                                                                                <div class="align-self-center">
+                                                                                    <a href="" class="btn btn-sm btn-soft-primary">Visit<i class="las la-external-link-alt font-15"></i></a>  
+                                                                                </div>
+                                                                            </div>                                        
+                                                                        </div><!--end blog-card-->                                                                                   
+                                                                    </div><!--end card-body-->
+                                                                </div><!--end card-->
+                                                            </div>
+                                                        </div>                                                                               
+                                                    </div><!--end card-body-->
+                                                </div><!--end card-->
+                                            </div>
+
+
+            </div><!-- container -->
+
+            <!--Start Rightbar-->
+
+                 <!--end Rightbar-->
+                 
+                <!--Start Footer-->
+                <!-- Footer Start -->
+                <footer class="text-center">
+                    &copy; <script>
+                        document.write(new Date().getFullYear())
+                    </script> HRMIS 
+                </footer>
+                <!-- end Footer -->                
+                <!--end footer-->
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page-wrapper -->
+
+    <!-- Javascript  -->
+    <!-- vendor js -->
+    
+       <script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/libs/simplebar/simplebar.min.js"></script>
+        <script src="/libs/feather-icons/feather.min.js"></script>
+        <script src="/libs/litepicker/litepicker.js"></script>
+        <script src="/libs/apexcharts/apexcharts.min.js"></script>
+        <script src="/js/pages/projects-index.init.js"></script>
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    <script>
+        const tobii = new Tobii()
+    </script>
+
+</body>
+
+</html>
