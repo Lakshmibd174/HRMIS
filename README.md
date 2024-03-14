@@ -34,6 +34,7 @@ This opens the MySQL database through phpMyAdmin as shown below
 ![step13](https://github.com/Lakshmibd174/HRMIS/assets/160733534/f3494826-d5cf-4068-af31-69ecb010d582)
 
 14.	Run the node js app using the command node index.js
+
 ![step14](https://github.com/Lakshmibd174/HRMIS/assets/160733534/741056e1-9508-4476-9bc0-c606c97a4217)
 
 15.	The app is now available on the address http://localhost:3000/
